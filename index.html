@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haken-Home</title>
+    <link rel="stylesheet" href="style/home.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="header-container">
+        <a href="./index.html">
+          <img src="assets/logos/crochet-logo-designs-template.jpg" alt="logo" id="logo" loading="lazy">
+        </a>
+
+        <nav class="nav-container">
+          <label for="menu-toggle">
+            <img src="assets/logos/burger-menu-right-svgrepo-com.svg" id="burger-menu" alt="mobile menu" loading="lazy">
+          </label>
+          <input type="checkbox" id="menu-toggle">
+
+          <ul>
+            <li><a href="./index.html" id="home">home</a></li>
+            <li><a href="./pages/haaktermen_tabell.html" id="crochet-terms">haaktermen</a></li>
+            <li><a href="./pages/gezondheid.html" id="healthy">gezondheid</a></li>
+
+            <li id="dropdown">
+              <a href="#" id="inspiration">inspiratie &#129171;</a>
+              <ul>
+                <li><a href="./pages/patroon.html">patroon</a></li>
+                <li><a href="./pages/foto_galerij.html">foto galerij</a></li>
+              </ul>
+            </li>
+
+            <li id="dropdown-mobile">
+
+              <label class="dropbtn" for="submenu-toggle" id="inspiration-mobile">inspiratie &#129171;</label>
+              <input type="checkbox" id="submenu-toggle" class="submenu-toggle">
+
+              <div class="dropdown-content">
+                <a href="./pages/patroon.html">patroon</a>
+                <a href="./pages/foto_galerij.html">foto galerij</a>
+              </div>
+            </li>
+
+            <li><a href="./pages/contact.html" id="contact">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="main-img"></div>
+
+        <article class="article-container">
+          <h1>Wat is haken?</h1>
+          <p>
+            Haken is een handwerktechniek. Haken gebeurt met behulp van een haaknaald. Daarmee worden van garen eenvoudige tot ingewikkelde lussen
+            gemaakt, die samen een patroon vormen. Voor haakwerk kunnen verschillende soorten garen gebruikt worden, van het fijnste katoen voor
+            kanten kleedjes tot touw en raffia voor koorden en andere gebruiksartikelen. Afhankelijk van het gebruikte garen, wordt voor een dunne tot
+            dikke naald gekozen.
+          </p>
+
+          <section class="article-content">
+            <h2>Waarom haken?</h2>
+            <p>
+              Haken is gezond! De volgende keer dat jullie je haaknaald pakken en je partner, kinderen, huisdieren of wie dan ook begint te zuchten,
+              dan roep je heel hard: Hé, ik werk aan mijn gezondheid. Haken is namelijk goed voor je.
+              <a href="./pages/gezondheid.html">5 redenen waarom haken de gezondheid bevorderd</a>
+            </p>
+          </section>
+        </article>
+
+        <div class="assets-container">
+
+          <picture>
+            <source srcset="assets/fotos/pink-small.jpg" media="(max-width: 768px)">
+            <source srcset="assets/fotos/pink-big.jpg" media="(min-width: 769px)">
+            <img src="assets/fotos/pink-big.jpg" alt="pink yarn" loading="lazy">
+          </picture>
+
+          <picture>
+            <source srcset="assets/fotos/orange-small.jpg" media="(max-width: 768px)">
+            <source srcset="assets/fotos/orange-big.jpg" media="(min-width: 769px)">
+            <img src="assets/fotos/orange-big.jpg" alt="orange yarn" loading="lazy">
+          </picture>
+          
+          <picture>
+            <source srcset="assets/fotos/red-small.jpg" media="(max-width: 768px)">
+            <source srcset="assets/fotos/red-big.jpg" media="(min-width: 769px)">
+            <img src="assets/fotos/red-big.jpg" alt="red yarn" loading="lazy">
+          </picture>
+
+          <iframe id="octopus"
+            src="https://www.youtube.com/embed/3hYLs_D1HYA?si=UuHCGdNoITRHlCOd"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+
+          <iframe id="dino" src="https://www.youtube.com/embed/AhSH4DMMpvg?si=P8eS_xOi7zYZ5lW1" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen></iframe>
+        </div>
+
+        <div class="card-container">
+          <div class="card" id="basket">
+            <img src="assets/fotos/1508761570-ny-700xauto.jpg" alt="mandje" loading="lazy">
+
+            <div class="card-content">
+              <p>
+                Mist je een paar handige zelfgehaakte mandjes? Dan is dit patroon met fijne Hobbii Ribbon-garen écht iets voor jou. Je kun uiteraard
+                zelf de twee kleuren uitkiezen, zodat je je hele eigen, unieke mandje krijgt.
+              </p>
+
+              <button onclick="document.getElementById('mandje').click()">Download gratis patroon van Hobbii</button>
+              <a id="mandje" href="pdf/Mandje.pdf" download="Mandje.pdf" hidden></a>
+            </div>
+          </div>
+
+          <div class="card" id="scarf">
+            <img src="assets/fotos/1511440695-dsc-0746-700xauto.jpg" alt="sjaal" loading="lazy">
+
+            <div class="card-content">
+              <p>
+                Lekker warme sjaal, gehaakt met het mooie Lollipop garen. Het garen is gemaakt van 20% wol en 80% acryl, en is verkrijgbaar in 17
+                verschillende mooie kleurencombinaties.
+              </p>
+
+              <button onclick="document.getElementById('scarf-pdf').click()">Download gratis patroon van Hobbii</button>
+              <a id="scarf-pdf" href="pdf/Sjaal.pdf" download="Sjaal.pdf" hidden></a>
+            </div>
+          </div>
+
+          <div class="card" id="towel">
+            <img src="assets/fotos/crossed-stitch-disktrasa-700xauto.jpg" alt="vaatdoek" loading="lazy">
+
+            <div class="card-content">
+              <p>Fijne vaatdoek, gehaakt met Rainbow 8/4 garen. De vaatdoek is gehaakt in een crossed stitch patroon.</p>
+
+              <button onclick="document.getElementById('towel-pdf').click()">Download gratis patroon van Hobbii</button>
+              <a id="towel-pdf" href="pdf/Vaatdoek.pdf" download="Vaatdoek.pdf" hidden></a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer-container">
+        <a href="./index.html">
+          <img src="assets/logos/crochet-logo-designs-template.jpg" alt="logo" id="logo-footer" loading="lazy">
+        </a>
+
+        <p>haken</p>
+      </footer>
+    </div>
+  </body>
+</html>

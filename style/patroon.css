@@ -1,0 +1,110 @@
+@import url(../style/style.css);
+
+#inspiration {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.article-container {
+    border-top: 1px solid grey;
+    margin-block-start: 0.5em;
+}
+
+
+.article-container p:nth-child(3):first-letter {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@keyframes slide {
+    
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos {
+    padding-block: 2em;
+    overflow: hidden;
+    overflow-x: auto;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
+
+.logos::after,
+.logos::before {
+    block-size: 100%;
+    content: "";
+    inline-size: 250px;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.logos::before {
+    left: 0;
+}
+
+.logos::after {
+    right: 0;
+}
+
+.logos:hover .logo-slide {
+    animation-play-state: paused;
+}
+
+.logo-slide {
+    animation: 35s slide infinite linear;
+    display: inline-block;
+    
+}
+
+.logo-slide img {
+    block-size: 30px;
+    margin-inline: 1em;
+}
+
+.logo-slide a {
+    color: #fff;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+@media screen and (min-width: 768px) {
+
+    .article-container {
+        margin-inline: 20%;
+    }
+    
+    .logo-slide img {
+        block-size: 50px;
+    }
+    
+}

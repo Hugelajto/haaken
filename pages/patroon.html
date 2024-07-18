@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haken-Patroon</title>
+
+    <link rel="stylesheet" href="../style/patroon.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/logos/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/logos/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/logos/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <div class="page-container">
+      <header class="header-container">
+        <a href="../index.html">
+          <img src="../assets/logos/crochet-logo-designs-template.jpg" alt="logo" id="logo" loading="lazy">
+        </a>
+
+        <nav class="nav-container">
+          <label for="menu-toggle">
+            <img src="../assets/logos/burger-menu-right-svgrepo-com.svg" id="burger-menu" alt="mobile menu" loading="lazy">
+          </label>
+          <input type="checkbox" id="menu-toggle">
+
+          <ul>
+            <li><a href="../index.html" id="home">home</a></li>
+            <li><a href="./haaktermen_tabell.html" id="crochet-terms">haaktermen</a></li>
+            <li><a href="./gezondheid.html" id="healthy">gezondheid</a></li>
+
+            <li id="dropdown">
+              <a href="#" id="inspiration">inspiratie &#129171;</a>
+              <ul>
+                <li><a href="./patroon.html">patroon</a></li>
+                <li><a href="./foto_galerij.html">foto galerij</a></li>
+              </ul>
+            </li>
+
+            <li id="dropdown-mobile">
+              <label class="dropbtn" for="submenu-toggle" id="inspiration-mobile">inspiratie &#129171;</label>
+              <input type="checkbox" id="submenu-toggle" class="submenu-toggle">
+
+              <div class="dropdown-content">
+                <a href="./patroon.html">patroon</a>
+                <a href="./foto_galerij.html">foto's galerij</a>
+              </div>
+            </li>
+
+            <li><a href="./contact.html" id="contact">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="main-img"></div>
+
+        <h1>Haak patronen</h1>
+        <p>Wil beginnen met haaken maar weet niet precies waar te beginnen?</p>
+
+        <article class="article-container">
+          <h2>Beginnen</h2>
+
+          <p>
+            Er is zoveel inspiratie en hulp online te vinden. Er zijn haakpatronen voor iedereen, van beginners tot ervaren hakers. Of je nu iets
+            kleins en eenvoudigs wilt maken of iets groots dat meer tijd kost. Misschien wil je je voorbereiden op de herfst en winter met een warme
+            muts of een paar sokken? Of ken je iemand die binnenkort gezinsuitbreiding krijgt en wil je een knuffeldoekje haken? Er zijn eindeloos
+            veel patronen voor allerlei soorten projecten.
+          </p>
+          <p>
+            Hieronder staan een paar websites die je kunnen inspireren om te beginnen met het maken van mooie creaties met slechts een haaknaald en
+            een bol garen.
+          </p>
+        </article>
+
+        <div class="logos">
+          <div class="logo-slide">
+            <a href="https://hobbii.nl/patronen?filter=type%3AHaken">
+              <img src="../assets/logos/hobbii-logo-2021.png" alt="hobbii-logo" id="hobbii" loading="lazy">
+            </a>
+
+            <a href="https://gekophaken.nl/haakpatronen/">
+              <img src="../assets/logos/gek-op-haken-logo.png" alt="gek op haken-logo" id="gek-op-haken" loading="lazy">
+            </a>
+
+            <a href="https://www.hobbygigant.nl/haken/haakpatronen/gratis-haakpatronen/">
+              <img src="../assets/logos/hobbygigant_logo_hartje2.svg" alt="hobbygigant-logo" id="hobbygigant" loading="lazy">
+            </a>
+
+            <a href="https://www.wolplein.nl/patronen/haakpatronen">
+              <img src="../assets/logos/wolplein.svg" alt="wolplein-logo" id="wolplei" loading="lazy">
+            </a>
+
+            <a href="https://www.garnstudio.com/gratis-haakpatronen">
+              <img src="../assets/logos/drops-design.svg" alt="drops design-logo" id="drops-design" loading="lazy">
+            </a>
+
+            <a href="https://www.freubelweb.nl/category/haakpatroon/">
+              <img src="../assets/logos/freubelweb.png" alt="freubelweb" id="freubelweb" loading="lazy">
+            </a>
+          </div>
+        </div>
+
+        <script>
+          let copy = document.querySelector(".logo-slide").cloneNode(true);
+          document.querySelector(".logos").appendChild(copy);
+        </script>
+
+        <div class="foto-container">
+          <picture>
+            <source srcset="../assets/fotos/pink-small.jpg" media="(max-width: 768px)">
+            <source srcset="../assets/fotos/pink-big.jpg" media="(min-width: 769px)">
+            <img src="../assets/fotos/pink-big.jpg" alt="pink yarn" loading="lazy">
+          </picture>
+
+          <picture>
+            <source srcset="../assets/fotos/orange-small.jpg" media="(max-width: 768px)">
+            <source srcset="../assets/fotos/orange-big.jpg" media="(min-width: 769px)">
+            <img src="../assets/fotos/orange-big.jpg" alt="orange yarn" loading="lazy">
+          </picture>
+          
+          <picture>
+            <source srcset="../assets/fotos/red-small.jpg" media="(max-width: 768px)">
+            <source srcset="../assets/fotos/red-big.jpg" media="(min-width: 769px)">
+            <img src="../assets/fotos/red-big.jpg" alt="red yarn" loading="lazy">
+          </picture>
+        </div>
+      </main>
+
+      <footer class="footer-container">
+        <a href="../index.html">
+          <img src="../assets/logos/crochet-logo-designs-template.jpg" alt="logo" id="logo-footer" loading="lazy">
+        </a>
+
+        <p>haken</p>
+      </footer>
+    </div>
+  </body>
+</html>
